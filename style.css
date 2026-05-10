@@ -16,6 +16,13 @@
     --pure-white: #fff;
 }
 
+/* to scroll on clicking home or any header part */
+html{
+    scroll-behavior: smooth;
+}
+
+
+
 body{
     background: var(--eye-ball);
 }
@@ -84,6 +91,20 @@ img{
 
 
 /* Header styling */
+
+
+/* to fix the header on top */
+
+header{
+    position: sticky;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background: var(--eye-ball);
+    z-index: 990;
+}
+
+
 
 .navbar{
     min-height: 14vh;
@@ -192,6 +213,9 @@ p{
 
 
 
+
+
+
 /* Section 01 */
 
 h5{
@@ -260,12 +284,13 @@ h4{
     padding-block: 2rem;
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: flex-start;
     align-items: center;
     z-index: 99;
     box-shadow: 
     rgba(0, 0, 0, 0.1) -10px -10px 20px;
     transition: 0.3s ease-in-out;
+    /* position: relative; */
 }
 .cart-tab-active{
     inset: 0 0 0 auto;
@@ -276,6 +301,8 @@ h4{
     width: 100%;
     margin-top: 1.5rem;
     overflow: auto;
+    /* change */
+    padding-top: 0.5rem;
 }
 .cart-list::-webkit-scrollbar{
     width: 0;
@@ -347,7 +374,41 @@ h4{
     margin-inline: 0.6rem;
 }
 
+/* x-mark */
 
+/* .cart-header h3{
+    margin: 0;
+} */
+
+.cart-header{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1.5rem 1.5rem 0.5rem 1.5rem;
+    background: var(--hint-yellow);
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.x_mark{
+    /* position: static;
+    /* color:var(--lead); */
+    /* top: 18%; */
+    /* right: 13%; */
+    /* background-color: #212121; */
+    /* cursor: pointer; */
+    /* z-index: 100; */
+    /* font-size: 1.4rem; */ 
+    font-size: 1.8rem;
+    cursor: pointer;
+    color: var(--lead);
+    width: 2rem;
+    height: 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+}
 
 /* Section 03 */
 
@@ -490,6 +551,7 @@ input[type="email"]:focus{
         display: block;
     }
 
+
     .mobile-menu{
         display: flex;
         flex-direction: column;
@@ -512,6 +574,18 @@ input[type="email"]:focus{
     .mobile-menu-active{
         left: 50%;
         transform: translateX(-50%);
+    }
+
+
+    /* for x-mark  */
+
+    .btnx{
+        
+        padding: 0.5rem;
+        position: absolute;
+        top: 15px;
+        right: 20px;
+
     }
 
     /* Section styling */
@@ -549,7 +623,7 @@ input[type="email"]:focus{
     }
 
 
-    /* Done By Own */
+    /* By Own */
     .content{
         text-align: center;
     }

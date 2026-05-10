@@ -25,19 +25,19 @@
 
             <ul class="navlist flex gap-3">
                 <li>
-                    <a href="#">Home</a>
+                    <a href="#home">Home</a>
                 </li>
                 <li>
-                    <a href="#">Menu</a>
+                    <a href="#menu">Menu</a>
                 </li>
                 <li>
-                    <a href="#">Service</a>
+                    <a href="#services">Service</a>
                 </li>
                 <li>
-                    <a href="#">About us</a>
+                    <a href="#contact">About us</a>
                 </li>
                 <li>
-                    <a href="#">Contact</a>
+                    <a href="#contact">Contact</a>
                 </li>
             </ul>
 
@@ -63,7 +63,17 @@
 
         <!-- MOBILE MENU -->
 
+        
+        <!-- <div class="mobile-menu">
+            <i class="fa-solid fa-xmark" ></i>
+        </div> -->
+
         <ul class="mobile-menu">
+
+            <li class="btnx">
+                <i class="fa-solid fa-xmark" ></i>
+            </li>
+            
             <li>
                 <a href="#">Home</a>
             </li>
@@ -95,7 +105,7 @@
     <main>
 
         <!-- Hero Section -->
-        <section>
+        <section id="home">
             <div class="hero-section flex wrapper gap-4">
                 <div class="content">
                     <h1>
@@ -122,13 +132,13 @@
                     </div>
                 </div>
 
-                <div class="image-container">
+                <div class="image-container" id="home_boy">
                     <img src="image/delivery-boy.png">
                 </div>
         </section>
 
         <!-- Section 01 -->
-        <section>
+        <section id="services">
             <div class=" wrapper p-top">
                 <div class="text-center">
                     <h5>Our Services</h5>
@@ -165,7 +175,7 @@
 
 
         <!-- Section 02 -->
-        <section>
+        <section id="menu">
             <div class="wrapper p-top">
                 <div class="text-center">
                     <h5>Our Menu</h5>
@@ -186,7 +196,13 @@
                 <!-- Cart Tab -->
 
                 <div class="cart-tab">
-                    <h3>Your Cart</h3>
+                    
+                    <div class="cart-header">
+                        <h3>Your Cart</h3>
+                        <div class="x_mark">
+                        <i class="fa-solid fa-xmark" ></i>
+                        </div>
+                    </div>
 
                     <div class="cart-list">
                         <!-- <div class="item">
@@ -215,8 +231,8 @@
                     </div>
 
                     <div class="btn-container flex gap-2">
-                        <a hrf="#" class="btn close-btn">Close</a>
-                        <a hrf="#" class="btn">Check Out</a>
+                        <a href="#" class="btn close-btn">Close</a>
+                        <a href="#" class="btn">Check Out</a>
                     </div>
                 </div>
 
@@ -360,7 +376,7 @@
     </main>
     <!-- Footer Part -->
 
-    <footer>
+    <footer id="contact">
         <div class="footer-container">
             <div class="flex wrapper gap-4">
                 <div class="footer-wrapper">
